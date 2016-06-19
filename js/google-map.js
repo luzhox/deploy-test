@@ -19,7 +19,29 @@ function CrearMapa() {
 
 	});
 
+var styles = [
+  {
+    stylers: [
+      { hue: "#16a085"},
+      { saturation: 20 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 10 },
+      { visibility: "on" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
+      { visibility: "on" }
+    ]
+  }
+];
 
+map.setOptions({styles: styles});
 		
 
 }
